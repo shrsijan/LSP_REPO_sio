@@ -1,5 +1,5 @@
 /**
-*  Sijan Shrestha
+*  Name: Sijan Shrestha
 */
 package org.howard.edu.lsp.assignment1;
 
