@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Elt_pipeline {
     public static void main(String[] args) {
-        // Define where the input and output CSV files are located
+        // path to input and output files
         String inputFilePath = "src/org/howard/edu/lsp/assignment2/data/products.csv";
         String outputFilePath = "src/org/howard/edu/lsp/assignment2/data/transformed_products.csv";
 
