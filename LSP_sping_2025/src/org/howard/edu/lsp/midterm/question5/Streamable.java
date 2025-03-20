@@ -2,6 +2,9 @@ package org.howard.edu.lsp.midterm.question5;
 
 /**
  * The Streamable interface defines common behaviors for all media types.
+ * References
+ * - java documentation
+ * - lecture notes
  */
 public interface Streamable {
     void play();

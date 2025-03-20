@@ -1,7 +1,8 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * The StreamingService class tests the functionality of the Streamable interface
+ * Quetion 5
+ * The StreamingServiceDriver class tests the functionality of the Streamable interface
  * and its concrete implementations: Music, Movie, and Audiobook.
  */
 public class StreamingServiceDriver {
