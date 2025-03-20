@@ -8,6 +8,7 @@ package org.howard.edu.lsp.midterm.question2;
  *  - Lecture Notes on Object-Oriented Programming, javadocs
  *  - Encapsulation, getter, setter methods
  *  - assignment 2 submission file
+ *  - javadoc documentation
  */
 public class Book {
     // Private attributes to ensure encapsulation
