@@ -1,0 +1,18 @@
+ProductID,Name,Price,Category,PriceRange
+1,Wireless Mouse,23.39,Electronics,Medium
+2,Office Chair,149.49,Furniture,High
+3,Hd Monitor,269.99,Electronics,High
+4,Desk Lamp,34.95,Furniture,Medium
+5,Mechanical Keyboard,116.99,Electronics,High
+6,Bluetooth Speaker,71.99,Electronics,Medium
+7,Notebook,5.49,Stationery,Low
+8,Ballpoint Pen,2.99,Stationery,Low
+9,Standing Desk,499.00,Furniture,High
+10,Smartphone,809.99,Premium Electronics,Premium
+11,Usb-c Cable,14.99,Accessories,Medium
+12,Noise-canceling Headphones,179.99,Electronics,High
+13,Leather Wallet,45.00,Accessories,Medium
+14,Sketchbook,12.50,Stationery,Medium
+15,Power Bank,53.99,Electronics,Medium
+16,4k Television,1079.99,Premium Electronics,Premium
+17,Stapler,7.99,Stationery,Low

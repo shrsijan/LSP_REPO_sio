@@ -4,11 +4,11 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-public class Elt_pipeline {
+public class Elt_Pipeline {
     public static void main(String[] args) {
         // Define where the input and output CSV files are located
-        String inputFilePath = "src/org/howard/edu/lsp/assignment2/data/products.csv";
-        String outputFilePath = "src/org/howard/edu/lsp/assignment2/data/transformed_products.csv";
+        String inputFilePath = "LSP_sping_2025/src/org/howard/edu/lsp/assignment2/data/products.csv";
+        String outputFilePath = "LSP_sping_2025/src/org/howard/edu/lsp/assignment2/data/transformed_products.csv";
 
         try {
             List<String[]> updatedRecords = new ArrayList<>(); // Store processed records
