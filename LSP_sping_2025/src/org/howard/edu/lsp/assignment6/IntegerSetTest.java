@@ -72,32 +72,44 @@ public class IntegerSetTest {
     @DisplayName("Test case for largest()")
     public void testLargest() throws IntegerSetException {
         IntegerSet set = new IntegerSet();
-        set.add(1);
-        set.add(50);
-        set.add(3);
-        assertEquals(50, set.largest(), "Largest should be 50");
+        set.add(10);
+        set.add(20);
 
+        assertEquals(20, set.largest(), "Should return the largest value");
+        // Clear the set to test the exception
         set.clear();
-        assertThrows(IntegerSetException.class, () -> {
+
+        Exception exception = assertThrows(IntegerSetException.class, () -> {
             set.largest();
-        }, "Expected IntegerSetException for largest() on empty set");
+        });
+
+        // Print the message to console
+        System.out.println("Caught expected exception in testLargest(): " + exception.getMessage());
+        assertEquals("Cannot fetch largest from an empty set.", exception.getMessage());
     }
+
+
 
     @Test
     @DisplayName("Test case for smallest()")
     public void testSmallest() throws IntegerSetException {
         IntegerSet set = new IntegerSet();
-        set.add(4);
-        set.add(2);
         set.add(10);
-        set.add(1);
-        assertEquals(1, set.smallest(), "Smallest should be 1");
+        set.add(2);
+        set.add(5);
+        assertEquals(2, set.smallest(), "Smallest should be the smallest value");
 
         set.clear();
-        assertThrows(IntegerSetException.class, () -> {
+
+        Exception exception = assertThrows(IntegerSetException.class, () -> {
             set.smallest();
-        }, "Expected IntegerSetException for smallest() on empty set");
+        });
+
+        System.out.println("Caught expected exception in testsmallest(): " + exception.getMessage());
+
+        assertEquals("Cannot fetch smallest from an empty set.", exception.getMessage());
     }
+
 
     @Test
     @DisplayName("Test case for add(int item)")
