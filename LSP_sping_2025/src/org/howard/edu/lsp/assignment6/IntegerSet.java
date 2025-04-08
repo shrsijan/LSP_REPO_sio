@@ -87,9 +87,9 @@ public class IntegerSet  {
      * @return largest integer
      * @throws IllegalStateException if the set is empty
      */
-    public int largest() {
+    public int largest() throws IntegerSetException {
         if (this.isEmpty()) {
-            throw new IllegalStateException("Cannot fetch largest from an empty set.");
+            throw new IntegerSetException("Cannot fetch largest from an empty set.");
         }
         int max = this.set.get(0);
         for (int val : this.set) {
@@ -105,9 +105,9 @@ public class IntegerSet  {
      * @return smallest integer
      * @throws IllegalStateException if the set is empty
      */
-    public int smallest() {
+    public int smallest() throws IntegerSetException {
         if (this.isEmpty()) {
-            throw new IllegalStateException("Cannot fetch smallest from an empty set.");
+            throw new IntegerSetException("Cannot fetch smallest from an empty set.");
         }
         int min = this.set.get(0);
         for (int val : this.set) {

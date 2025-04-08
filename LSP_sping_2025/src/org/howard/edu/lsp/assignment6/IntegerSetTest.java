@@ -19,7 +19,7 @@ public class IntegerSetTest {
         assertFalse(set.isEmpty(), "Set should not be empty before clear");
 
         set.clear();
-        assertTrue(set.isEmpty(), "Set should be empty after clear");
+        assertEquals(true, set.isEmpty(), "Should be empty");
     }
 
     @Test
