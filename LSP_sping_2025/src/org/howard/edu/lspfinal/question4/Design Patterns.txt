@@ -1,0 +1,11 @@
+One clear case where a pattern can do more harm than good is when it needlessly over-abstracts a simple problem, turning straightforward code into an indirection-heavy maze.
+
+As we saw in lecture, design patterns often promote flexibility by introducing extra interfaces and classes. But as mentioned during class this may be at the expense of a more complicated design. Applying, say, the Strategy pattern when you have only a single algorithm variant ends up violating the KISS principle (“keep it simple, stupid!”), adds boilerplate, and makes maintenance harder without any real extensibility benefit.
+
+Think of it like making a peanut-butter-and-jelly sandwich. If I know I will always make only that one sandwich, there’s no need for me to define a whole “SandwichStrategy” interface with multiple classes for “SpreadPeanutButter,” “SpreadJelly,” etc. I’d be better off just spreading peanut butter and jelly directly on the bread, keeping it simple and enjoying my meal. (the KISS principle).
+
+In scenarios where requirements are stable and variation is unlikely, it’s often better to stick with direct implementation rather than reach for a pattern and risk over-engineering.
+
+One downside we didn’t cover in lecture is runtime overhead from all those extra layers of indirection. Every time we introduce new interfaces, abstract classes or decorator/factory wrappers, even if it makes our design “cleaner”,  we also add extra method calls, more objects on the heap, and deeper call stacks.
+
+For example, imagine I just want to read a single file and print its contents. If I wrap my file reader in a chain of decorator patterns (buffered reader → logging reader → compression reader → encryption reader → …), I’ll spend most of your time shuttling data through those extra wrappers instead of actually reading the file. In a high-performance or real-time system, that added latency can be a real problem and sometimes it’s far better to write one simple reader than to follow a “textbook” pattern that I’ll never swap out.
